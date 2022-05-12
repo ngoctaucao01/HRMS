@@ -14,7 +14,6 @@ import { AppComponent } from "./app.component";
 import { ServiceProxyModule } from "@shared/service-proxies/service-proxy.module";
 import { SharedModule } from "@shared/shared.module";
 import { HomeComponent } from "@app/home/home.component";
-import { AboutComponent } from "@app/about/about.component";
 // tenants
 import { TenantsComponent } from "@app/tenants/tenants.component";
 import { CreateTenantDialogComponent } from "./tenants/create-tenant/create-tenant-dialog.component";
@@ -39,12 +38,31 @@ import { SidebarComponent } from "./layout/sidebar.component";
 import { SidebarLogoComponent } from "./layout/sidebar-logo.component";
 import { SidebarUserPanelComponent } from "./layout/sidebar-user-panel.component";
 import { SidebarMenuComponent } from "./layout/sidebar-menu.component";
+import { CompaniesComponent } from "./companies/companies.component";
+import { AddCompanyComponent } from "./companies/add-company/add-company.component";
+import { EditCompanyComponent } from "./companies/edit-company/edit-company.component";
+import { OfficesComponent } from "./offices/offices.component";
+import { AddOfficeComponent } from "./offices/add-office/add-office.component";
+import { EditOfficeComponent } from "./offices/edit-office/edit-office.component";
+import { EmployeesComponent } from "./employees/employees.component";
+import { AddEmployeeComponent } from "./employees/add-employee/add-employee.component";
+import { EditEmployeeComponent } from "./employees/edit-employee/edit-employee.component";
+import { PositionsComponent } from "./positions/positions.component";
+import { AddPositionComponent } from "./positions/add-position/add-position.component";
+import { EditPositionComponent } from "./positions/edit-position/edit-position.component";
+import { DepartmentsComponent } from "./departments/departments.component";
+import { AddDepartmentComponent } from "./departments/add-department/add-department.component";
+import { EditDepartmentComponent } from "./departments/edit-department/edit-department.component";
+import { ApplicationAbsentComponent } from "./application-absent/application-absent.component";
+import { AddApplicationAbsentComponent } from "./application-absent/add-application-absent/add-application-absent.component";
+import { EditApplicationAbsentComponent } from "./application-absent/edit-application-absent/edit-application-absent.component";
+import { AbsentEmployeesComponent } from './employees/absent-employees/absent-employees.component';
+import { EmployeesWfhComponent } from './employees/employees-wfh/employees-wfh.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
     // tenants
     TenantsComponent,
     CreateTenantDialogComponent,
@@ -69,6 +87,26 @@ import { SidebarMenuComponent } from "./layout/sidebar-menu.component";
     SidebarLogoComponent,
     SidebarUserPanelComponent,
     SidebarMenuComponent,
+    CompaniesComponent,
+    AddCompanyComponent,
+    EditCompanyComponent,
+    OfficesComponent,
+    AddOfficeComponent,
+    EditOfficeComponent,
+    EmployeesComponent,
+    AddEmployeeComponent,
+    EditEmployeeComponent,
+    PositionsComponent,
+    AddPositionComponent,
+    EditPositionComponent,
+    DepartmentsComponent,
+    AddDepartmentComponent,
+    EditDepartmentComponent,
+    ApplicationAbsentComponent,
+    AddApplicationAbsentComponent,
+    EditApplicationAbsentComponent,
+    AbsentEmployeesComponent,
+    EmployeesWfhComponent,
   ],
   imports: [
     CommonModule,

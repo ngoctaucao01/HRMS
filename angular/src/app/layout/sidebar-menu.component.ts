@@ -44,106 +44,52 @@ export class SidebarMenuComponent extends AppComponentBase implements OnInit {
   getMenuItems(): MenuItem[] {
     return [
       new MenuItem(this.l("Dashboard"), "/app/home", "fas fa-home"),
-      new MenuItem(
-        this.l("Roles"),
-        "/app/roles",
-        "fas fa-theater-masks",
-        "Pages.Roles"
-      ),
-      new MenuItem(
-        this.l("Tenants"),
-        "/app/tenants",
-        "fas fa-building",
-        "Pages.Tenants"
-      ),
-      new MenuItem(
-        this.l("Users"),
-        "/app/users",
-        "fas fa-users",
-        "Pages.Users"
-      ),
+      //   new MenuItem(
+      //     this.l("Roles"),
+      //     "/app/roles",
+      //     "fas fa-theater-masks",
+      //     "Pages.Roles"
+      //   ),
+      //   new MenuItem(
+      //     this.l("Tenants"),
+      //     "/app/tenants",
+      //     "fas fa-building",
+      //     "Pages.Tenants"
+      //   ),
+      //   new MenuItem(
+      //     this.l("Users"),
+      //     "/app/users",
+      //     "fas fa-users",
+      //     "Pages.Users"
+      //   ),
 
       new MenuItem("Companies", "", "", "", [
-        new MenuItem(
-          "List Companies",
-          "https://aspnetboilerplate.com?ref=abptmpl",
-          ""
-        ),
-        new MenuItem(
-          "Add Companies",
-          "https://aspnetboilerplate.com/Templates?ref=abptmpl",
-          ""
-        ),
+        new MenuItem("Companies List", "/app/companies", ""),
+        new MenuItem("Add Company", "/app/add-company", ""),
       ]),
       new MenuItem("Offices", "", "", "", [
-        new MenuItem(
-          "List Offices",
-          "https://aspnetboilerplate.com?ref=abptmpl",
-          ""
-        ),
-        new MenuItem(
-          "Add Offices",
-          "https://aspnetboilerplate.com/Templates?ref=abptmpl",
-          ""
-        ),
+        new MenuItem("Offices List", "/app/offices", ""),
+        new MenuItem("Add Office", "/app/add-office", ""),
       ]),
       new MenuItem("Employees", "", "", "", [
-        new MenuItem(
-          "List Employees",
-          "https://aspnetboilerplate.com?ref=abptmpl",
-          ""
-        ),
-        new MenuItem(
-          "Add Employees",
-          "https://aspnetboilerplate.com/Templates?ref=abptmpl",
-          ""
-        ),
+        new MenuItem("Employees List", "/app/employees", ""),
+        new MenuItem("Add Employees", "/app/add-employee", ""),
+        new MenuItem("Absent Employees", "/app/absent-employees", ""),
+        new MenuItem("Employees wfh", "/app/employees-wfh", ""),
       ]),
       new MenuItem("Positions", "", "", "", [
-        new MenuItem(
-          "List Positions",
-          "https://aspnetboilerplate.com?ref=abptmpl",
-          ""
-        ),
-        new MenuItem(
-          "Add Positions",
-          "https://aspnetboilerplate.com/Templates?ref=abptmpl",
-          ""
-        ),
+        new MenuItem("Positions List", "/app/positions", ""),
+        new MenuItem("Add Position", "/app/add-position", ""),
       ]),
       new MenuItem("Departments", "", "", "", [
-        new MenuItem(
-          "List Departments",
-          "https://aspnetboilerplate.com?ref=abptmpl",
-          ""
-        ),
-        new MenuItem(
-          "Add Departments",
-          "https://aspnetboilerplate.com/Templates?ref=abptmpl",
-          ""
-        ),
+        new MenuItem("Departments List", "/app/departments", ""),
+        new MenuItem("Add Departments", "/app/add-department", ""),
       ]),
       new MenuItem("Application Absent", "", "", "", [
-        new MenuItem(
-          "List ApplicationAbsent",
-          "https://aspnetboilerplate.com?ref=abptmpl",
-          ""
-        ),
+        new MenuItem("ApplicationAbsent List", "/app/applications-absent", ""),
         new MenuItem(
           "Add ApplicationAbsent",
-          "https://aspnetboilerplate.com/Templates?ref=abptmpl",
-          ""
-        ),
-      ]),
-      new MenuItem("Users", "", "", "", [
-        new MenuItem(
-          "List Users",
-          "https://aspnetboilerplate.com?ref=abptmpl",
-          ""
-        ),
-        new MenuItem(
-          "Add Users",
-          "https://aspnetboilerplate.com/Templates?ref=abptmpl",
+          "/app/add-application-absent",
           ""
         ),
       ]),
