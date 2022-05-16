@@ -4,10 +4,13 @@ import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientJsonpModule } from "@angular/common/http";
 import { HttpClientModule } from "@angular/common/http";
+
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ModalModule } from "ngx-bootstrap/modal";
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { CollapseModule } from "ngx-bootstrap/collapse";
 import { TabsModule } from "ngx-bootstrap/tabs";
+
 import { NgxPaginationModule } from "ngx-pagination";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -56,8 +59,8 @@ import { EditDepartmentComponent } from "./departments/edit-department/edit-depa
 import { ApplicationAbsentComponent } from "./application-absent/application-absent.component";
 import { AddApplicationAbsentComponent } from "./application-absent/add-application-absent/add-application-absent.component";
 import { EditApplicationAbsentComponent } from "./application-absent/edit-application-absent/edit-application-absent.component";
-import { AbsentEmployeesComponent } from './employees/absent-employees/absent-employees.component';
-import { EmployeesWfhComponent } from './employees/employees-wfh/employees-wfh.component';
+import { AbsentEmployeesComponent } from "./employees/absent-employees/absent-employees.component";
+import { EmployeesWfhComponent } from "./employees/employees-wfh/employees-wfh.component";
 
 @NgModule({
   declarations: [
@@ -77,6 +80,7 @@ import { EmployeesWfhComponent } from './employees/employees-wfh/employees-wfh.c
     EditUserDialogComponent,
     ChangePasswordComponent,
     ResetPasswordDialogComponent,
+    //account
     // layout
     HeaderComponent,
     HeaderLeftNavbarComponent,
@@ -123,6 +127,7 @@ import { EmployeesWfhComponent } from './employees/employees-wfh/employees-wfh.c
     SharedModule,
     NgxPaginationModule,
     NgChartsModule,
+    NgbModule,
   ],
   providers: [],
   entryComponents: [

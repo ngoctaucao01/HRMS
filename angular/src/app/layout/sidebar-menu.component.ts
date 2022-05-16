@@ -1,5 +1,6 @@
 import { Component, Injector, OnInit } from "@angular/core";
 import { AppComponentBase } from "@shared/app-component-base";
+import { AccordionConfig } from "ngx-bootstrap/accordion";
 import {
   Router,
   RouterEvent,
@@ -10,9 +11,16 @@ import { BehaviorSubject } from "rxjs";
 import { filter } from "rxjs/operators";
 import { MenuItem } from "@shared/layout/menu-item";
 
+// such override allows to keep some initial values
+export function getAccordionConfig(): AccordionConfig {
+  return Object.assign(new AccordionConfig(), { closeOthers: true });
+}
+
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: "sidebar-menu",
   templateUrl: "./sidebar-menu.component.html",
+  providers: [{ provide: AccordionConfig, useFactory: getAccordionConfig }],
 })
 export class SidebarMenuComponent extends AppComponentBase implements OnInit {
   menuItems: MenuItem[];
@@ -44,25 +52,6 @@ export class SidebarMenuComponent extends AppComponentBase implements OnInit {
   getMenuItems(): MenuItem[] {
     return [
       new MenuItem(this.l("Dashboard"), "/app/home", "fas fa-home"),
-      //   new MenuItem(
-      //     this.l("Roles"),
-      //     "/app/roles",
-      //     "fas fa-theater-masks",
-      //     "Pages.Roles"
-      //   ),
-      //   new MenuItem(
-      //     this.l("Tenants"),
-      //     "/app/tenants",
-      //     "fas fa-building",
-      //     "Pages.Tenants"
-      //   ),
-      //   new MenuItem(
-      //     this.l("Users"),
-      //     "/app/users",
-      //     "fas fa-users",
-      //     "Pages.Users"
-      //   ),
-
       new MenuItem("Companies", "", "", "", [
         new MenuItem("Companies List", "/app/companies", ""),
         new MenuItem("Add Company", "/app/add-company", ""),

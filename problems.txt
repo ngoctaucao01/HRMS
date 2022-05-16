@@ -1,0 +1,4 @@
+1. 
+One open panel at a time
+
+https://ng-bootstrap.github.io/#/components/accordion/examples#static
