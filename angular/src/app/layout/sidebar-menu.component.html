@@ -12,24 +12,6 @@
   </ul>
 </nav>
 
-<!-- <ngb-accordion [closeOthers]="true" activeIds="static-1">
-        <ngb-panel id="static-1" title="Simple">
-
-        </ngb-panel>
-  </ngb-accordion> -->
-
-<!-- <accordion [isAnimated]="true">
-  <accordion-group heading="Header">
-    This content is straight in the template.
-  </accordion-group>
-  <accordion-group heading="Content 1">
-    <p>Content 1</p>
-  </accordion-group>
-  <accordion-group heading="Content 2">
-    <p>Content 2</p>
-  </accordion-group>
-</accordion> -->
-
 <ng-template #sidebarInner let-item="item">
   <li
     *ngIf="isMenuItemVisible(item)"
